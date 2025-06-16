@@ -1,0 +1,1 @@
+import{b as n,a as p}from"./index-B7-jFRdm.js";const r=e=>({id:e.ClientId,label:e.Name,code:e.Code}),s=n.injectEndpoints({endpoints:e=>({getOrganization:e.query({query:()=>({url:"",params:{command:p.GET_ORGANIZATIONS,emelClass:"API3PL"}}),transformResponse:({OrganizationsList:a,Error:o})=>({Organizations:a==null?void 0:a.map(r),Error:o})})})});export{s as o};
