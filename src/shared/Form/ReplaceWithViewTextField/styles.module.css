@@ -1,0 +1,8 @@
+.hidden {
+  display: none !important;
+}
+
+.textarea {
+  overflow: auto;
+  max-height: 140px;
+}

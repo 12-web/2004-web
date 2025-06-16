@@ -1,0 +1,39 @@
+{
+  "heading": "«Газпромнефть-Снабжение»",
+  "items": [
+    {
+      "sequenceNumber": 0,
+      "heading": {
+        "value": "Контакты  ",
+        "url": null
+      },
+      "texts": [
+        {
+          "value": "+7 (812) 448 00 51",
+          "url": null
+        },
+        {
+          "value": "supply.gazprom-neft.ru",
+          "url": "https://supply.gazprom-neft.ru/"
+        }
+      ],
+      "pictureUrl": null,
+      "type": "sectionText"
+    },
+    {
+      "sequenceNumber": 1,
+      "heading": {
+        "value": "О предприятии",
+        "url": null
+      },
+      "texts": [
+        {
+          "value": "«Газпромнефть-Снабжение» – комплексный оператор услуг в области промышленных закупок и логистики. «Газпромнефть-Снабжение» занимается материально-техническим обеспечением предприятий добывающей, энергетической, машиностроительной и других отраслей промышленности.",
+          "url": null
+        }
+      ],
+      "pictureUrl": "https://img.freepik.com/premium-photo/business-people-silhouettes-modern-office-morning-night-cityscapes-background-teamwork-concept-toned-image-double-exposure_780608-29218.jpg?w=996",
+      "type": "sectionPicture"
+    }
+  ]
+}

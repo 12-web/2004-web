@@ -1,0 +1,30 @@
+.root {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 1200px;
+  height: 90%;
+  padding: var(--space-s) var(--space-m);
+}
+
+.clientModal {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  max-width: 1200px;
+  padding: var(--space-s) var(--space-m);
+}
+
+.root::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}

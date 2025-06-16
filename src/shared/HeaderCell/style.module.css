@@ -1,0 +1,15 @@
+.root {
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 2.5rem;
+
+  background-color: #f7f8fa;
+}
+
+.isActive {
+  color: var(--color-control-bg-primary);
+}

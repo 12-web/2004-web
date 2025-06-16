@@ -1,0 +1,15 @@
+.toolbar {
+  row-gap: var(--space-m);
+  width: 100%;
+  padding: var(--space-xl);
+  background-color: #f7f8fa;
+}
+
+.buttons_group {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  column-gap: var(--space-s);
+}

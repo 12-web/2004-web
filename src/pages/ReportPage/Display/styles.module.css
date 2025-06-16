@@ -1,0 +1,32 @@
+.root {
+  overflow: auto;
+  flex-grow: 1;
+  height: calc(100vh - var(--space-m) * 3 - 64px / 2 - 80px);
+}
+
+.root:has(> .loader) {
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  align-self: flex-start;
+  padding: var(--space-xl);
+}
+
+.content table {
+  position: static !important;
+}
+
+.rootWithFiltersOpened {
+  width: calc(100vw - 600px);
+}
+
+.emptyTableText {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-typo-secondary);
+}

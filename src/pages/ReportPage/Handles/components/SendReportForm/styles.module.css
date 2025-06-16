@@ -1,0 +1,7 @@
+.wrapper {
+  gap: var(--space-s);
+}
+
+.input {
+  max-width: 280px;
+}

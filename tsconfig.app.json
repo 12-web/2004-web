@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./build/",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noUncheckedIndexedAccess": false,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "paths": {
+      "@hooks/*": ["hooks/*"],
+      "@models/*": ["models/*"],
+      "@store/*": ["store/*"],
+      "@utils/*": ["utils/*"],
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+      "@shared/*": ["shared/*"],
+      "@components/*": ["components/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-loadable-components-plugin"
+      },
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customMatcher": "\\.css$"
+        }
+      }
+    ]
+  },
+  "include": ["src"]
+}

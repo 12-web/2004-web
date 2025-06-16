@@ -1,0 +1,8 @@
+.icon {
+  fill: currentcolor;
+  transition: fill 0.3s;
+}
+
+.active {
+  fill: var(--color-control-bg-primary);
+}

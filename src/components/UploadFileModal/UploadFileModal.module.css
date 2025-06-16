@@ -1,0 +1,23 @@
+.modal {
+  display: flex;
+  max-width: 600px;
+  max-height: fit-content;
+}
+
+.dropdown {
+  margin: 30px 0 auto;
+}
+
+.handles {
+  gap: 12px;
+  margin: 12px 0 0 auto;
+}
+
+.text {
+  text-align: center;
+}
+
+.inner {
+  gap: 10px;
+  align-items: center;
+}

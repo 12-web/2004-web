@@ -1,0 +1,9 @@
+.clientModal {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  max-width: 800px;
+  height: auto;
+  padding: var(--space-s) var(--space-m);
+}

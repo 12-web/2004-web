@@ -1,0 +1,7 @@
+.root {
+  background-color: transparent;
+}
+
+.root :global(.MixFocus) {
+  --mix-focus-color-one: none;
+}

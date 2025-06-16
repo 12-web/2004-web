@@ -1,0 +1,21 @@
+.modal {
+  display: flex;
+  min-width: 600px;
+}
+
+.content {
+  width: 100%;
+  padding: var(--space-m) var(--space-xl);
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: auto;
+}

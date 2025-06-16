@@ -1,0 +1,18 @@
+.main {
+  flex-grow: 1;
+  padding: var(--space-6xl) 0 0;
+  background-color: #f7f8fa;
+}
+
+.main:has(.loader, .emptyText) {
+  justify-content: center;
+}
+
+.title {
+  padding: 0 var(--space-3xl) var(--space-xl);
+}
+
+.loader,
+.emptyText {
+  align-self: center;
+}

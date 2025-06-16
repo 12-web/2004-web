@@ -1,0 +1,13 @@
+.btn {
+  transform: translateX(-50%);
+
+  width: 100px;
+  min-width: 200px;
+  margin: 20px auto 0;
+  margin-top: 20px;
+  margin-left: 50%;
+}
+
+.header {
+  margin-bottom: 20px;
+}

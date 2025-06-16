@@ -1,0 +1,34 @@
+{
+  "heading": null,
+  "items": [
+    {
+      "sequenceNumber": 0,
+      "heading": {
+        "value": "Операционные инструкции",
+        "url": "#"
+      },
+      "texts": null,
+      "pictureUrl": null,
+      "type": "sectionText"
+    },
+    {
+      "sequenceNumber": 1,
+      "heading": {
+        "value": "Центр поддержки клиентов",
+        "url": null
+      },
+      "texts": [
+        {
+          "value": "+7 (921) 388 88 89",
+          "url": null
+        },
+        {
+          "value": "Contact_gpns@gazprom-neft.ru",
+          "url": null
+        }
+      ],
+      "pictureUrl": "https://img.freepik.com/premium-photo/business-people-silhouettes-modern-office-morning-night-cityscapes-background-teamwork-concept-toned-image-double-exposure_780608-29218.jpg?w=996",
+      "type": "sectionText"
+    }
+  ]
+}

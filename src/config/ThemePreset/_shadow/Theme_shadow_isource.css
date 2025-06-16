@@ -1,0 +1,6 @@
+.Theme_shadow_isource {
+  /* Тени */
+  --shadow-group: 0px 2px 2px var(--color-shadow-group-1), 0px 2px 2px var(--color-shadow-group-2);
+  --shadow-layer: 0px 4px 4px var(--color-shadow-layer-1), 0px 4px 4px var(--color-shadow-layer-2);
+  --shadow-modal: 0px 8px 8px var(--color-shadow-modal-1), 0px 8px 8px var(--color-shadow-modal-2);
+}

@@ -1,0 +1,119 @@
+.Theme_color_isourceDark {
+  /* ////////////////
+	// Цвета фонов / */
+  --color-bg-default: #22272b; /* Цвет дефолта */
+  --color-bg-secondary: #171a1d; /* Цвет дефолта */
+  --color-bg-brand: #0071b2; /* Цвет фона брендированый */
+  --color-bg-link: #0078d2; /* Цвет фона ссылки */
+  --color-bg-border: rgba(242, 249, 252, 0.2); /* Цвет границ */
+  --color-bg-stripe: rgba(200, 231, 243, 0.05); /* Цвет зебры */
+  --color-bg-ghost: rgba(200, 231, 243, 0.08); /* Цвет затенения */
+  --color-bg-tone: rgba(200, 231, 243, 0.85); /* Цвет паранджи */
+  --color-bg-soft: rgba(255, 255, 255, 0.9); /* Цвет молока */
+  --color-bg-system: #4d525b; /* Цвет фона системнный */
+  --color-bg-normal: #0aa5ff; /* Цвет фона нейтральный */
+  --color-bg-success: #22c38e; /* Цвет фона успеха */
+  --color-bg-caution: #f2c94c; /* Цвет фона осторожности */
+  --color-bg-warning: #f38b00; /* Цвет фона предупреждения */
+  --color-bg-alert: #fe4444; /* Цвет фона ошибки */
+  --color-bg-critical: #33000f; /* Цвет фона системнный */
+
+  /* /////////////////
+	// Цвета текста / */
+  --color-typo-primary: #fafafa; /* Цвет основного текста */
+  --color-typo-secondary: rgba(255, 255, 255, 0.6); /* Цвет второстепенного текста */
+  --color-typo-ghost: rgba(255, 255, 255, 0.3); /* Цвет дополнительного текста */
+  --color-typo-brand: #0071b2; /* Цвет брендового текста */
+  --color-typo-system: #636e83; /* Цвет текста системнный */
+  --color-typo-normal: #009bf5; /* Цвет текста нейтральный */
+  --color-typo-success: #0fad79; /* Цвет текста успеха */
+  --color-typo-caution: #f8c837; /* Цвет текста осторожности */
+  --color-typo-warning: #e48200; /* Цвет текста предупреждения */
+  --color-typo-alert: #f73c3c; /* Цвет текста ошибки */
+  --color-typo-critical: #61001d; /* Цвет текста системнный */
+  --color-typo-link: #10a1ff; /* Цвет основной ссылки */
+  --color-typo-link-minor: #6fa5c9; /* Цвет второстепенной ссылки */
+  --color-typo-link-hover: #58bdff; /* Цвет ховера ссылки */
+
+  /* ////////////////////
+	// Цвета контролов / */
+
+  /* Default */
+  --color-control-bg-default: #22272b; /* Цвет фона контрола */
+  --color-control-typo-default: rgba(255, 255, 255, 0.8); /* Цвет основного текста контрола */
+  --color-control-typo-placeholder: rgba(255, 255, 255, 0.35); /* Цвет плейсхолдера контрола */
+  --color-control-bg-border-default: rgba(246, 251, 253, 0.28); /* Цвет фона бордеров котрола */
+  --color-control-bg-border-default-hover: rgba(
+    246,
+    251,
+    253,
+    0.52
+  ); /* Цвет фона бордеров котрола по ховеру */
+  --color-control-bg-border-focus: #0694ff; /* Цвет аутлайна контролов при фокусе */
+  --color-control-bg-focus: rgba(0, 120, 210, 0.4); /* Цвет тени в состонии фокуса */
+  --color-control-bg-active: rgba(0, 120, 210, 0.7); /* Цвет тени в состонии нажатия */
+
+  /* Primary */
+  --color-control-bg-primary: #0078d2; /* Цвет фона активного контрола */
+  --color-control-bg-primary-hover: #0192ff; /* Цвет фона активного контрола по ховеру */
+  --color-control-typo-primary: #ffffff; /* Цвет акцентного текста */
+  --color-control-typo-primary-hover: #ffffff; /* Цвет акцентного текста */
+
+  /* Secondary */
+  --color-control-bg-secondary: rgba(34, 39, 43, 0); /* Цвет фона бордеров контрола */
+  --color-control-bg-border-secondary: #0078d2; /* Цвет фона бордеров котрола */
+  --color-control-bg-border-secondary-hover: #0192ff; /* Цвет фона бордеров контрола по ховеру */
+  --color-control-typo-secondary: #10a1ff; /* Цвет второстепеного текста контрола */
+  --color-control-typo-secondary-hover: #58bdff; /* Цвет акцентного текста */
+
+  /* Ghost */
+  --color-control-bg-ghost: rgba(250, 250, 250, 0.32); /* Цвет фона дополнительного контрола */
+  --color-control-bg-ghost-hover: rgba(
+    250,
+    250,
+    250,
+    0.23
+  ); /* Цвет фона дополнительного контрола по ховеру */
+  --color-control-typo-ghost: rgba(255, 255, 255, 0.75); /* Цвет дополнительного текста контрола */
+  --color-control-typo-ghost-hover: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Цвет дополнительного текста контрола по ховеру */
+
+  /* Clear */
+  --color-control-bg-clear: rgba(250, 250, 250, 0); /* Цвет фона чистого контрола */
+  --color-control-bg-clear-hover: rgba(
+    250,
+    250,
+    250,
+    0.23
+  ); /* Цвет фона чистого контрола по ховеру */
+  --color-control-typo-clear: rgba(255, 255, 255, 0.75); /* Цвет акцентного текста */
+  --color-control-typo-clear-hover: rgba(255, 255, 255, 0.9); /* Цвет акцентного текста */
+
+  /* Disable */
+  --color-control-bg-disable: rgba(250, 250, 250, 0.16); /* Цвет фона неактивного контрола */
+  --color-control-bg-border-disable: rgba(
+    250,
+    250,
+    250,
+    0
+  ); /* Цвет фона бордеров неактивного контрола */
+  --color-control-typo-disable: rgba(
+    255,
+    255,
+    255,
+    0.24
+  ); /* Цвет основного текста неактивного контрола */
+
+  /* ///////////////
+	// Цвета тени / */
+  --color-shadow-group-1: rgba(0, 0, 0, 0.08);
+  --color-shadow-group-2: rgba(0, 0, 0, 0.32);
+  --color-shadow-layer-1: rgba(0, 0, 0, 0.08);
+  --color-shadow-layer-2: rgba(0, 0, 0, 0.32);
+  --color-shadow-modal-1: rgba(0, 0, 0, 0.08);
+  --color-shadow-modal-2: rgba(0, 0, 0, 0.32);
+}

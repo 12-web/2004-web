@@ -1,0 +1,73 @@
+.columnsPopover {
+  overflow-y: clap;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 280px;
+
+  background: var(--color-bg-default);
+  border: 1px solid var(--color-bg-border);
+  border-radius: var(--control-radius);
+  box-shadow: var(--shadow-modal);
+}
+
+.checkboxes {
+  scrollbar-width: 2px;
+
+  overflow: auto;
+  flex-grow: 1;
+  gap: 6px;
+
+  height: 200px;
+  margin-top: var(--space-s);
+  padding-inline: var(--space-s);
+
+  word-break: break-all;
+}
+
+.checkboxes::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.checkboxes::-webkit-scrollbar-thumb {
+  background-color: var(--color-typo-secondary);
+}
+
+.text {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-typo-secondary);
+}
+
+.search {
+  padding: var(--space-s) var(--space-s) 0 var(--space-s);
+}
+
+.handles {
+  gap: var(--space-s);
+  justify-content: flex-end;
+  padding: var(--space-s);
+}
+
+.checked {
+  position: relative;
+}
+
+.checked::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+
+  width: 7px;
+  height: 7px;
+
+  background-color: red;
+  border-radius: 50%;
+}

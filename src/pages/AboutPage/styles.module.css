@@ -1,0 +1,9 @@
+.main {
+  flex-grow: 1;
+  padding: var(--space-6xl) 0 0;
+  background-color: #f7f8fa;
+}
+
+.title {
+  padding: 0 var(--space-3xl) var(--space-xl);
+}

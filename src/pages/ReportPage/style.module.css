@@ -1,0 +1,15 @@
+.main {
+  flex-grow: 1;
+}
+
+.header {
+  position: relative;
+
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 64px;
+  padding: var(--space-m) var(--space-xl);
+
+  background-color: #f7f8fa;
+}

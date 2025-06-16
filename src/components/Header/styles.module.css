@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  min-height: 64px;
+  padding: 0 var(--space-xl);
+
+  border-bottom: 1px solid #f0f0f0;
+}

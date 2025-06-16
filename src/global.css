@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button.Button.button {
+  color: var(--color-typo-primary);
+  background-color: var(--color-bg-default);
+  border: 1px solid var(--color-control-bg-border-default);
+}
+
+button.Button.button:hover {
+  color: var(--color-typo-primary);
+  background-color: var(--color-bg-default);
+  border: 1px solid var(--color-control-bg-border-default);
+}
+
+button.Button.button:focus {
+  box-shadow: none;
+}
+
+.Modal,
+.Popover {
+  z-index: 1;
+}
+
+div.ct--TableCell {
+  word-break: break-all;
+  border-left-color: transparent;
+}
+
+div.ct--TableHeader-Cell {
+  border-left-color: var(--color-bg-border);
+}
+
+.hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

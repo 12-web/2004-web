@@ -1,0 +1,24 @@
+.container {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  position: fixed;
+  inset: 50%;
+}
+
+.cellButton {
+  display: flex;
+  justify-content: center;
+}

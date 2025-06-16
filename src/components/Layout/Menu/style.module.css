@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+.menu ul {
+  gap: var(--space-m);
+  justify-content: end;
+  width: 100%;
+}
+
+.menu ul > li > * {
+  font-size: var(--size-text-s);
+  font-weight: 500;
+  color: var(--color-typo-primary);
+}

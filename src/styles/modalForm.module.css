@@ -1,0 +1,81 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tableWrapper {
+  flex-grow: 1;
+}
+
+.innerFormWrapper {
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.fieldWithBtn {
+  grid-template-columns: 1fr auto !important;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.mainBtnPanel {
+  grid-template-columns: 1fr auto auto auto !important;
+  margin-top: 10px;
+}
+
+.handles {
+  gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-block: 10px;
+}
+
+.hidden {
+  position: absolute;
+
+  overflow: hidden;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  border: 0;
+}
+
+.saveBtn {
+  transform: translateX(-100%);
+  min-width: 150px;
+  margin-top: 16px;
+  margin-left: 100%;
+}
+
+.lineCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 5px;
+}
+
+.emptyTableText {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-typo-secondary);
+}
+
+.checkboxHeader {
+  padding: 0 5px;
+  background-color: #f7f8fa;
+}

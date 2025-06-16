@@ -1,0 +1,44 @@
+.table {
+  grid-template-columns: repeat(calc(var(--table-grid-columns-length) - 1), 1fr) 40px !important;
+
+  width: 100%;
+  max-height: calc(100vh - 300px);
+  margin-top: var(--space-xl);
+  padding: 0 var(--space-xl) 0 var(--space-xl);
+}
+
+.table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: var(--color-typo-secondary);
+}
+
+.cell {
+  align-items: center;
+  height: 2.5rem;
+}
+
+.cellButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+
+.switchButton {
+  color: var(--color-typo-secondary);
+}
+
+.noData {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  padding: var(--space-xl);
+}

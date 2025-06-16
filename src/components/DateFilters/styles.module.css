@@ -1,0 +1,26 @@
+.dates {
+  flex-grow: 1;
+  column-gap: var(--space-xs);
+  align-items: center;
+}
+
+.date_checkbox {
+  column-gap: var(--space-2xs);
+}
+
+.month {
+  width: 4rem;
+}
+
+.year {
+  max-width: 5.5rem;
+}
+
+.month input,
+.year input {
+  min-width: 0;
+}
+
+.date_picker {
+  max-width: 8rem;
+}
