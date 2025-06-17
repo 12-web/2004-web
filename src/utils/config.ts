@@ -1,4 +1,4 @@
 export default {
-  BASE_API_ENDPOINT: import.meta.env.VITE_BASE_API_ENDPOINT,
-  API_ENDPOINT: import.meta.env.VITE_API_ENDPOINT,
+  DEV_API_ENDPOINT: import.meta.env.VITE_DEV_API_ENDPOINT,
+  PROD_API_ENDPOINT: import.meta.env.VITE_PROD_API_ENDPOINT,
 }

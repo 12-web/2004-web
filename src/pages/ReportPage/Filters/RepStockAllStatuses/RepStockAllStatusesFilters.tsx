@@ -1,6 +1,5 @@
 import { Layout } from '@consta/uikit/Layout'
 import { FormProvider, useForm } from 'react-hook-form'
-import { GoodsTable } from './GoodsTable/GoodsTable'
 import { Tabs as TabsUI } from '@components/Tabs/Tabs'
 import { WarehousesTable } from './WarehousesTable/WarehousesTable'
 import { Button } from '@consta/uikit/Button'
@@ -8,10 +7,26 @@ import { getRepStockAllStatusesReport } from '@store/outMappers/report'
 import { FilterComponent } from '@pages/ReportPage/ReportPage'
 import { RepStockAllStatusesInputs } from 'types/report/report'
 import { VendorsTable } from './VendorsTable/VendorsTable'
+import { GoodsTable } from '@components/Table/GoodsTable/GoodsTable'
 
 import styles from '../styles.module.css'
 
 type RepStockAllStatusesFiltersProps = FilterComponent
+
+const tabs = [
+  {
+    name: 'Склады',
+    component: WarehousesTable,
+  },
+  {
+    name: 'Товары',
+    component: GoodsTable,
+  },
+  {
+    name: 'Организации',
+    component: VendorsTable,
+  },
+]
 
 export const RepStockAllStatusesFilters = ({
   isOpen,
@@ -34,17 +49,15 @@ export const RepStockAllStatusesFilters = ({
           <Layout className={`${styles.body} ${isOpen ? styles.bodyIsOpen : ''}`}>
             <Layout className={styles.content} direction="column">
               <Layout direction="column" className={styles.flexedContainer}>
-                <Layout direction="column" className={styles.flexedContainer}>
-                  <TabsUI steps={['Склады', 'Товары', 'Организации']}>
-                    {({ step, steps }) => (
-                      <>
-                        <WarehousesTable className={step === steps[0] ? undefined : 'hidden'} />
-                        <GoodsTable className={step === steps[1] ? undefined : 'hidden'} />
-                        <VendorsTable className={step === steps[2] ? undefined : 'hidden'} />
-                      </>
-                    )}
-                  </TabsUI>
-                </Layout>
+                <TabsUI steps={tabs.map(tab => tab.name)}>
+                  {({ step, steps }) => (
+                    <>
+                      {tabs.map(({ component: Component }, i) => (
+                        <Component key={i} className={step === steps[i] ? undefined : 'hidden'} />
+                      ))}
+                    </>
+                  )}
+                </TabsUI>
               </Layout>
             </Layout>
           </Layout>

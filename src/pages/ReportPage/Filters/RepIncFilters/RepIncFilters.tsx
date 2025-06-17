@@ -6,15 +6,15 @@ import { Text } from '@consta/uikit/Text'
 import { FormProvider, useForm } from 'react-hook-form'
 import { message } from '@utils/userMessages/FormMessages'
 import { formatDateISO } from '@utils/dates'
-import { GoodsTable } from './GoodsTable/GoodsTable'
 import { Tabs as TabsUI } from '@components/Tabs/Tabs'
 import { WarehousesTable } from './WarehousesTable/WarehousesTable'
 import { Button } from '@consta/uikit/Button'
 import { getRepIncReport } from '@store/outMappers/report'
 import { FilterComponent } from '@pages/ReportPage/ReportPage'
+import { RepIncInputs } from 'types/report/report'
 
 import styles from '../styles.module.css'
-import { RepIncInputs } from 'types/report/report'
+import { GoodsTable } from '@components/Table/GoodsTable/GoodsTable'
 
 type RepIncFiltersProps = FilterComponent
 

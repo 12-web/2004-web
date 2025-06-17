@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     server: {
       proxy: {
         '/JSON': {
-          target: env.VITE_API_ENDPOINT,
+          target: env.VITE_PROD_API_ENDPOINT,
           changeOrigin: true,
           secure: false,
         },
@@ -18,6 +18,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'build',
     },
+    base:  env.NODE_ENV === 'production' ? '/2004-web' : '/',
     plugins: [react()],
     resolve: {
       alias: [

@@ -1,0 +1,139 @@
+.root {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  max-width: 600px;
+  padding: var(--space-m) var(--space-xl);
+
+  background-color: #f7f8fa;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.body {
+  overflow: hidden;
+  flex-grow: 1;
+  height: 0;
+  transition: height 0.3s ease-out;
+}
+
+.bodyIsOpen {
+  height: calc(100vh - var(--space-m) * 3 - 64px / 2 - 49px);
+}
+
+.content {
+  flex-grow: 1;
+  align-items: flex-start;
+
+  width: 100%;
+  margin-bottom: var(--space-m);
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.handles {
+  gap: var(--space-s);
+  align-self: flex-end;
+}
+
+.dates {
+  gap: var(--space-s);
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  padding-bottom: var(--space-xl);
+}
+
+.datesInner {
+  gap: var(--space-s);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.date {
+  width: min-content;
+}
+
+.table {
+  width: 100%;
+  max-width: 550px;
+  max-height: calc(100vh - 400px);
+}
+
+.table :global(.ct--TableCell) {
+  overflow: visible;
+}
+
+.table::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: var(--color-typo-secondary);
+}
+
+.cell {
+  align-items: center;
+  height: 2.5rem;
+}
+
+.cellButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+}
+
+.switchButton {
+  color: var(--color-typo-secondary);
+}
+
+.noData {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeHeaderCell {
+  color: var(--color-control-bg-primary);
+}
+
+.lineCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 42px;
+  padding: 5px;
+}
+
+.checkedItems {
+  display: flex;
+  justify-content: flex-end;
+  padding: var(--space-xs);
+  background-color: white;
+}
+
+.flexedContainer {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.checkboxHeader {
+  padding: 0 5px;
+  background-color: #f7f8fa;
+}
+
+.pagination {
+  padding: var(--space-xl) 0;
+}

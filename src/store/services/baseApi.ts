@@ -6,7 +6,7 @@ import { store } from '..'
 export const baseApi = createApi({
   reducerPath: 'baseApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: config.BASE_API_ENDPOINT,
+    baseUrl: process.env.NODE_ENV === 'development' ? config.DEV_API_ENDPOINT : config.PROD_API_ENDPOINT,
     paramsSerializer: params => {
       const isAuthQuery = params.command === apiRoutes.CHECK_LOGIN
 

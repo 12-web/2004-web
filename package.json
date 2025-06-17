@@ -9,7 +9,10 @@
 		"lint": "eslint src --color",
 		"lint:fix": "eslint src --color --fix",
 		"preview": "vite preview",
-		"prettify": "prettier --write 'src/**/*.{ts,tsx}'"
+		"prettify": "prettier --write 'src/**/*.{ts,tsx}'",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
 	},
 	"dependencies": {
 		"@consta/header": "^3.0.0",
@@ -37,6 +40,7 @@
 		"eslint-plugin-react": "^7.37.2",
 		"eslint-plugin-react-hooks": "^5.0.0",
 		"eslint-plugin-react-refresh": "^0.4.14",
+		"gh-pages": "^6.3.0",
 		"globals": "^15.12.0",
 		"stylelint": "^16.11.0",
 		"stylelint-config-clean-order": "^6.1.0",

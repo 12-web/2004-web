@@ -28,14 +28,14 @@ const Pages = () => {
   return (
     <Suspense fallback={renderLoader}>
       <Routes>
-        <Route path="login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route element={<PrivateRoutes />}>
-          <Route path="asn" element={<AsnPage />} />
-          <Route path="goods" element={<GoodPage />} />
-          <Route path="orders" element={<OrderPage />} />
-          <Route path="report/:reportName" element={<ReportPage />} />
-          <Route path="help" element={<HelpPage />} />
-          <Route path="about" element={<AboutPage />} />
+          <Route index path="/asn" element={<AsnPage />} />
+          <Route path="/goods" element={<GoodPage />} />
+          <Route path="/orders" element={<OrderPage />} />
+          <Route path="/report/:reportName" element={<ReportPage />} />
+          <Route path="/help" element={<HelpPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<Error404Page />} />
         </Route>
       </Routes>

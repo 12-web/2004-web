@@ -9,11 +9,10 @@ import { Checkbox } from '@consta/uikit/Checkbox'
 import { Good } from '@store/types/goodApi'
 import DataCell from '@shared/DataCell'
 import { Layout } from '@consta/uikit/Layout'
-import { RepOutInputs } from 'types/report/report'
 import { Text } from '@consta/uikit/Text'
 import CommonRowSetter from '@components/RowSetter/CommonRowSetter'
 
-import styles from '../../styles.module.css'
+import styles from '../styles.module.css'
 
 type GoodTableLine = Good & any
 
@@ -21,8 +20,12 @@ type GoodsTableProps = {
   className?: string
 }
 
+type GoodsFieldTable = {
+  goods: Good[] | 'Все'
+}
+
 export const GoodsTable = ({ className }: GoodsTableProps) => {
-  const { setValue } = useFormContext<RepOutInputs>()
+  const { setValue } = useFormContext<GoodsFieldTable>()
 
   const [selectedRows, setSelectedRows] = useState<GoodTableLine[]>([])
 
