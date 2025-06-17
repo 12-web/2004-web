@@ -1,0 +1,1 @@
+import{j as o}from"./index-B-pc7VSy.js";import{h as a,I as p}from"./helpApi-BzZVFlSg.js";import"./LayoutContainer-Bu1UZq1E.js";import"./Layout-BXWYmvNF.js";import"./MixSpace-CrFO27ps.js";const n=()=>{const{data:t,isLoading:e}=a.useGetHelpQuery({pageType:"about"});return o.jsx(p,{...t,isLoading:e})};export{n as default};
