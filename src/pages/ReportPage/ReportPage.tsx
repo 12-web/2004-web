@@ -36,7 +36,7 @@ export type FilterComponent = {
   onGetClick: (args: { [key: string]: string | number }) => void
 }
 
-const OrderReportPage = () => {
+const ReportPage = () => {
   const { reportName } = useParams()
   const navigate = useNavigate()
 
@@ -86,4 +86,4 @@ const OrderReportPage = () => {
   )
 }
 
-export default OrderReportPage
+export default ReportPage

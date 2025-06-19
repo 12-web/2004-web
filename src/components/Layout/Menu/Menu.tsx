@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { MenuItems } from './types'
 import { Menu as MenuConstaUi } from '@consta/header/Menu'
-import { useLocation } from 'react-router'
+import { Link, NavLink, useLocation } from 'react-router'
 
 import style from './style.module.css'
 
@@ -54,6 +54,32 @@ const Menu = () => {
     setData(updatedLinks)
   }, [location.pathname])
 
+  return (
+    <nav className={style.menu}>
+      <ul>
+        {defaultData.map((item, i) => (
+          <li key={i + item.label}>
+            <NavLink className={({ isActive }) => (isActive ? 'active' : '')} to={item.href!}>
+              {item.label}
+            </NavLink>
+            {item.subMenu && (
+              <ul>
+                {item.subMenu.map((subItem, i) => (
+                  <li key={i + item.label}>
+                    <NavLink
+                      className={({ isActive }) => (isActive ? 'active' : '')}
+                      to={subItem.href!}>
+                      {subItem.label}
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )
   return <MenuConstaUi className={style.menu} items={data} />
 }
 

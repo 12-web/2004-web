@@ -6,7 +6,7 @@ import styles from './styles.module.css'
 
 const Error404Page = () => {
   const navigate = useNavigate()
-  const goHome = () => navigate('/')
+  const goHome = () => navigate('/login')
   const goBack = () => navigate(-1)
 
   return (

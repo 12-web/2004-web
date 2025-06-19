@@ -17,6 +17,7 @@ export const authApi = baseApi.injectEndpoints({
       query: ({ user, password }) => ({
         url: '',
         method: 'POST',
+        mode: 'cors',
         params: {
           command: apiRoutes.CHECK_LOGIN,
           json: JSON.stringify({

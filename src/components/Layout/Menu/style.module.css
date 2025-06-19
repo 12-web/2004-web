@@ -4,14 +4,108 @@
   align-self: stretch;
 }
 
-.menu ul {
+.menu > ul {
   gap: var(--space-m);
   justify-content: end;
   width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 0;
+}
+
+.menu > ul > li > a {
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.menu > ul > li > a:global(.active) {
+  border-color: var(--color-control-bg-primary);
+}
+
+.menu li {
+  text-decoration: none;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu a {
+  transition: opacity 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.6;
 }
 
 .menu ul > li > * {
   font-size: var(--size-text-s);
   font-weight: 500;
   color: var(--color-typo-primary);
+  text-decoration: none;
+}
+
+.menu ul > li > a:has(+ ul) {
+  pointer-events: none;
+}
+
+.menu ul > li:has(ul):before,
+.menu ul > li:has(ul):after {
+  border-right: 1.7px solid;
+  content: '';
+  display: block;
+  height: 6px;
+  margin-top: -6px;
+  position: absolute;
+  transform: rotate(-45deg);
+  right: -6px;
+  top: 55%;
+  width: 0;
+}
+
+.menu ul > li:has(ul):after {
+  margin-right: -4px;
+  transform: rotate(45deg);
+}
+
+.menu ul > li > ul {
+  border: 1px solid var(--color-typo-ghost);
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 0;
+  top: 80%;
+  padding: 0;
+  width: 200px;
+  z-index: 3;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+}
+
+.menu ul > li > ul > li > a {
+  font-weight: 400;
+}
+
+.menu ul > li > ul > li > a:global(.active) {
+  color: var(--color-control-bg-primary);
 }
