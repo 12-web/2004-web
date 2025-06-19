@@ -11,7 +11,7 @@ import './global.css'
 const App = () => (
   <Provider store={store}>
     <Theme preset={presetGpnDefault}>
-      <BrowserRouter basename="/2004-web">
+      <BrowserRouter basename="/">
         <Pages />
       </BrowserRouter>
     </Theme>
